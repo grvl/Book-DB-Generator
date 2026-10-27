@@ -1,0 +1,5 @@
+*.docx binary
+text/*.md linguist-generated=true
+app/db.js linguist-generated=true
+app/text.js linguist-generated=true
+app/manifest.webmanifest linguist-generated=true

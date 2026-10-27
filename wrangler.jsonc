@@ -1,0 +1,15 @@
+{
+  // Cloudflare Workers config: publishes ONLY the app/ folder as a static site.
+  // See docs/HOSTING.md. "name" must match the Worker's name in the Cloudflare dashboard,
+  // or the deploy fails.
+  "name": "my-book-db",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./app"
+  },
+  // Keep the main workers.dev address on (it is protected by Cloudflare Access, see docs/HOSTING.md).
+  "workers_dev": true,
+  // No extra preview or version addresses: fewer places where the manuscript could be reached.
+  // See "Preview links" in docs/HOSTING.md before turning this on.
+  "preview_urls": false
+}

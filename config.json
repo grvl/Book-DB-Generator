@@ -1,0 +1,15 @@
+{
+  "project": {
+    "name": "Book DB",
+    "title": "My Book",
+    "description": "Private story bible for my novel."
+  },
+  "files": {
+    "book1": {
+      "book": 1,
+      "title": "My Book",
+      "source": "source/book1.md",
+      "text": "text/book1.md"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Story bible</title>
+<meta name="description" content="Private story bible.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1f1e21">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Story bible">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">Story bible</a>
+  <form class="topsearch" id="topsearch" role="search">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.2 4.2-1.4 1.4-4.2-4.2A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z"/></svg>
+    <input id="topq" type="search" placeholder="Search (press /)" autocomplete="off" aria-label="Search everything">
+  </form>
+  <button type="button" class="asof-btn" id="asof"></button>
+</header>
+<div class="layout">
+  <nav class="sidenav" id="sidenav" aria-label="Sections"></nav>
+  <main id="view"><div class="splash"><div>Loading the story bible…</div></div></main>
+</div>
+<nav class="tabbar" id="tabbar" aria-label="Sections"></nav>
+<noscript><p style="padding:16px">This app needs JavaScript.</p></noscript>
+<script>
+  window.addEventListener('error', function (e) {
+    if (window.DB) return;
+    var v = document.getElementById('view');
+    if (v) v.innerHTML = '<div class="notice warn">Could not load the data (db.js). Run <code>node tools/build.mjs</code>.</div>';
+  });
+</script>
+<script src="db.js"></script>
+<script src="js/core.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/views-entities.js"></script>
+<script src="js/views-other.js"></script>
+<script src="js/search.js"></script>
+<script src="js/reader.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
