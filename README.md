@@ -89,4 +89,4 @@ If you publish your own fork or variant of this template, mark it as a template 
 
 ## License
 
-[MIT](LICENSE). Free to use, copy, modify and share, including commercially. Keep the copyright and license notice in copies of the software.
+Public domain, under [the Unlicense](LICENSE). Use, copy, modify, share or sell it for any purpose, with no need to give credit or keep any notice.
